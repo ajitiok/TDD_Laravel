@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'Laravel Test Driven';
+});
+
+Route::redirect('about-page','about');
+
+Route::get('about', function () {
+    return 'About';
 });
